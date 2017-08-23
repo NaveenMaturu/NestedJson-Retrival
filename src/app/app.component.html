@@ -1,30 +1,36 @@
-<div>
-  <md-card class="bgcolor" style=background-color:blue (click)="card(title)"  >
- {{this.title}}
- </md-card>
+{{title}}
 
-  <div *ngFor="let s of card1"   class="container" >
+<div>
+	<md-card class="bgcolor" style=background-color:blue (click)="card(title)"  >
+	{{this.title}}
+	</md-card>
+
+	<div *ngFor="let s of card1"   class="container" >
 	 <md-card class="bgcolor" style=background-color:orange (click)="app(s)" >
 	{{s}}
-</md-card>
-</div> 
-</div> 
-	
-	<div>
+	</md-card>
+	</div>
+</div>
+
+<div>
 	<button (click)="back()" style=background-color:red >back</button>
 </div>
-	
+
+
+
+
+
 	<!-- <div *ngFor="let z of under" class="container">
 	 <md-card class="bgcolor">
 	{{z}}
 	</md-card>
 	</div> -->
-	
-	
 
 
 
-<!--  
+
+
+<!--
  <div>
 <input type="text" [(ngModel)]="id"/>
 <button (click)="y()" id="naveen">id</button>
